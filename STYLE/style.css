@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+}
+
+.wrapper{
+    margin: 0 auto;
+    font-size: 24px;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+@media screen and (min-width:1920px){
+    .wrapper{
+        width: 80em;
+    }
+}
+    
+.menu{
+    height: 3.75em;
+    margin: 0 auto;
+    background-color: #202846;
+    background-image: url("../IMG/logo.png");
+    background-repeat: no-repeat;
+    background-position: 4em;
+    color: #FFFFFF;
+    font-weight: 700;
+    display:grid;
+    align-items: center;   
+}
+
+li > a:hover {
+    color: #AEAEE2;
+    }
+    
+.uppercase{
+    text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+    color:#FFFFFF
+}
+
+/* ------------------------------- */
+ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 20em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul li:nth-of-type(6)::before{
+    content: "";
+    display: inline-block;
+    width: 3.75em;
+    height: 3.75em;
+    background-image: url("../IMG/globe.png");
+    background-repeat: no-repeat;
+    background-position-y: .3em;
+    display: inline-block;
+    margin: -1.458em;
+    margin-right: -0.667em;  
+}
+
+ul li:nth-of-type(5){
+    max-width: 5.585em;
+    text-align: center;
+}
+/* ------------------------------- */
+.bookHouse{
+    height: 2.916em;
+    margin: 0 auto;
+    background-color: #C6C6DC;
+    font-size: 48px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    padding-left: 4.73em;
+    font-style: italic;
+    color: #202846;
+}
+
+.innerWrapper {
+    margin: 0 auto;
+    font-size: 22px;
+    padding-top: 56px;
+    padding-bottom: 120px;
+}
+
+@media screen and (min-width:1490px){
+    .innerWrapper{
+        max-width: 1490px;
+    }
+}
+
+ .dropdownList{
+    height: 3em;
+    background-color: #E8E8E8;
+    color: rgba(0, 0, 0, 0.61);
+    font-size: 28px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 56px;                        
+    background-image: url("../IMG/arrow.png");
+    background-repeat: no-repeat;
+    background-position: 98%;   
+}
+
+.card{
+    background-color: #BDBDC6;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    min-height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* ------------------------- */
+
+table{
+    border-spacing: 12px;
+    width: 50%;
+}
+
+td {border-width: 2px;
+/* height: 55px; */
+padding: 20px;
+}
+
+.card tr:nth-last-of-type(2) td{       /*Header of table*/
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    color:#353C57;
+    text-align: left;
+    padding-left: 0;
+    border-bottom: 3px solid #FFFFFF;
+    padding-bottom: 3px;
+}
+
+.card tr:nth-last-of-type(1) td{
+    font-size: 22px;
+    font-weight: 400;
+    color:#202846;
+    text-align: center;
+    background-color: #D7D7DD;;
+}
+
+.card:hover {
+    background-color: #AEABE2;
+    box-shadow: 5px 5px 30px;
+}
+
+.star{
+    position:absolute;
+    top: 5%;
+    left: 95.5%;
+}
+
+.card:hover .star svg path{
+    fill: #FFFF00;
+}
+
+.detalnisheButton{
+    position: absolute;
+    top: 76%;
+    left: 90%;
+}
+
+.card:hover .detalnisheButton svg ellipse {
+    fill: #EF075B;
+}
+
+.card:hover .detalnisheButton svg rect {
+    fill: #EF075B;
+}
+
+.photo{
+    width:485px;
+    height: 240px;
+    margin: 0;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.card:nth-last-of-type(4) .photo {
+    background-image: url("../IMG/view1.png");
+    background-repeat: no-repeat;
+}
+
+.card:nth-last-of-type(3) .photo {
+    background-image: url("../IMG/view2.png");
+    background-repeat: no-repeat;
+}
+
+.card:nth-last-of-type(2) .photo {
+    background-image: url("../IMG/view3.png");
+    background-repeat: no-repeat;
+}
+
+.card:nth-last-of-type(1) .photo {
+    background-image: url("../IMG/view4.png");
+    background-repeat: no-repeat;
+}
+
+.scrollButton {
+    position: fixed;
+    top: 80%;
+    left: 91vw;
+    z-index: 1;
+}
